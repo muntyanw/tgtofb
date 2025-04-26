@@ -1,0 +1,45 @@
+{
+  "fone_colors": [
+    "Светло-серая иллюстрация, фоновое изображение",
+    "Сплошной бирюзовый, фон",
+    "Розовая иллюстрация, фоновое изображение",
+    "Розово-желтый градиент, фоновое изображение"
+  ],
+  "chromedriver_port": 9223,
+  "time_wait_login": 40,
+  "xpaths":{
+    "xpath_start_publication":[
+      "//*[text()='Напишите что-нибудь...']"
+    ],
+    "xpath_publication":[
+      "//div[@aria-label='Создайте общедоступную публикацию…' and @contenteditable='true']",
+      "//div[@contenteditable='true' and @aria-label='Напишите что-нибудь...']",
+      "//div[@contenteditable='true' and @role='textbox' and @aria-placeholder='Напишите что-нибудь...']",
+      "//div[@contenteditable='true' and @role='textbox' and @aria-placeholder='Что у вас нового, Лідія?']"
+      
+    ],
+    "xpath_element_pub1":[
+      "//img[contains(@src, '/images/composer/SATP_Aa_square-2x.png')]"
+    ],
+    "xpath_element_pub2":[
+      "//div[@aria-label='Настройки фона' and @role='button']"
+    ],
+    "xpath_element_pub3":[
+      "//div[@role='button' and @aria-label='{fone_color}']"
+    ],
+    "xpath_element_pub4":[
+      "//*[text()='Дополните публикацию']"
+    ],
+    "xpath_element_pub5":[
+      "//span[contains(@class, 'x193iq5w') and text()='Фото/видео']"
+    ],
+    "xpath_element_pub6":[
+      "//div[contains(@class, 'x9f619') and contains(@class, 'x1n2onr6') and contains(@class, 'x1ja2u2z') and contains(@class, 'x78zum5') and contains(@class, 'xdt5ytf') and contains(@class, 'x2lah0s') and contains(@class, 'x193iq5w') and contains(@class, 'xurb0ha') and contains(@class, 'x1sxyh0') and contains(@class, 'x1gslohp') and contains(@class, 'x12nagc') and contains(@class, 'xzboxd6') and contains(@class, 'x14l7nz5')]//input[@type='file']"
+    ],
+    "xpath_element_pub7":[
+      "//div[@aria-label='Отправить']"
+    ]
+    
+  }
+ 
+}

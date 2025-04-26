@@ -1,0 +1,29 @@
+# Python кэш
+__pycache__/
+*.pyc
+*.pyo
+
+# Логи
+*.log
+
+# Среды виртуального окружения
+venv/
+env/
+
+# Конфиденциальные файлы
+creds.json
+
+# PyInstaller build
+build/
+dist/
+*.spec
+
+# IDE и редакторы
+.idea/
+.vscode/
+*.swp
+
+build/
+chrome-data/
+dist/
+chromedriver-win64/
