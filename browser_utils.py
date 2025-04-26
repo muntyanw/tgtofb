@@ -161,17 +161,16 @@ def publichOneMessage(driver, group_id, message, xpaths, image_path=None, fone_c
 
         find_and_click_by_xpaths(driver, xpaths["xpath_element_pub2"])
         
-        prepared_xpaths = []
+        # Генерация всех сочетаний
+        prepared_xpaths = [
+            xpath_template.format(fone_color=fone_color)
+            for xpath_template in xpaths["xpath_element_pub3"]
+            for fone_color in fone_colors
+        ]
 
-        for xpath_template in xpaths["xpath_element_pub3"]:
-            color = get_random_value(fone_colors)
-            if not color or color.strip() == "":
-                raise ValueError("Ошибка: get_random_value(fone_colors) вернул пустую строку!")
-            
-            xpath = xpath_template.format(fone_color=color)
-            prepared_xpaths.append(xpath)
-                
-        print(prepared_xpaths)
+        # Перемешивание в случайном порядке
+        random.shuffle(prepared_xpaths)
+        
         find_and_click_by_xpaths(driver, prepared_xpaths)
 
         # Если указан путь к изображению, загружаем его
