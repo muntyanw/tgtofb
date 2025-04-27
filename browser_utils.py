@@ -167,7 +167,7 @@ def publichOneMessage(driver, group_id, message, xpaths, image_path=None, fone_c
             for xpath_template in xpaths["xpath_element_pub3"]
             for fone_color in fone_colors
         ]
-
+        log_and_print(prepared_xpaths)
         # Перемешивание в случайном порядке
         random.shuffle(prepared_xpaths)
         
